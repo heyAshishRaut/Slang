@@ -18,6 +18,7 @@ function Showcase(){
     const [enterMessage2, setEnterMessage2] = useState(false); // Rules and regulation JOIN state
     const [create, setCreate] = useState(false); // Create button state
     const [join, setJoin] = useState(false); // Join button state
+    // @ts-ignore
     const [roomReady, setRoomReady] = useState(false); // Room ready state
 
     // Form States
@@ -29,6 +30,7 @@ function Showcase(){
     // Alert States
     const [isCreateOrNot, setIsCreateOrNot] = useState("");
     const [showAlert, setShowAlert] = useState(false);
+    // @ts-ignore
     const [isConnecting, setIsConnecting] = useState(false);
 
     const socketRef = useRef<WebSocket | null>(null);
